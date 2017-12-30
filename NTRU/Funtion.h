@@ -6,24 +6,24 @@ using namespace std;
 #define M 1000
 int N, p, q;
 
-//¶àÏîÊ½µÄ»ù±¾²Ù×÷
-void initF(int Lf[], int num);												//³õÊ¼»¯Lf¶àÏîÊ½													
-void init(int Arr[], int num);												//³õÊ¼»¯ÆäÓà¶àÏîÊ½
-void print(int Arr[]);															//Êä³ö¶àÏîÊ½
-void mod(int a1[], int mod);											//¶àÏîÊ½È¡Ä£
-void Add(int a1[], int a2[], int a3[]);									//¶àÏîÊ½¼Ó·¨
-void ModAdd(int a1[], int a2[], int a3[], int mod);			//¶àÏîÊ½Ä£¼Ó
-void Minus(int a1[], int a2[], int a3[]);								//¶àÏîÊ½¼õ·¨
-void ModMinus(int a1[], int a2[], int a3[], int mod);		//¶àÏîÊ½Ä£¼õ
-void Mul(int a1[], int a2[], int a3[]);									//¶àÏîÊ½³Ë·¨
-void ConstMul(int a1[], int con, int a3[]);						//¶àÏîÊ½Óë³£ÊıÏà³Ë
-void RingMul(int a1[], int a2[], int a3[]);							//¶àÏîÊ½»·ÉÏµÄ³Ë·¨
-void ModRingMul(int a1[], int a2[], int a3[], int mod);	//¶àÏîÊ½»·ÉÏµÄÄ£³Ë
-int MaxExpon(int a[]);														//ÅĞ¶Ï¶àÏîÊ½×î´óÏî
-void Divine(int a1[], int a2[], int a3[], int a4[]);				//¶àÏîÊ½µÄ³ı·¨
-void Copy(int a1[], int a2[]);												//¶àÏîÊ½µÄ¸´ÖÆ
-int Inverse(int a1[], int a2[], int inverse[], int inv);			//¶àÏîÊ½µÄÄæ
-void Update(int Lf[], int inverse[], int fq[], int q);				//ÄæµÄÌáÉı
-void KeyGeneration(int Lf[], int U[], int g[], int h[]);			//ÃÜÔ¿Éú³É
-void Encryption(int h[], int Lr[], int m[], int e[]);				//¼ÓÃÜ¹ı³Ì
-void Decryption(int e[], int Lf[], int a[], int Fq[]);				//½âÃÜ¹ı³Ì
+//å¤šé¡¹å¼çš„åŸºæœ¬æ“ä½œ
+void initF(int Lf[], int num);												        //åˆå§‹åŒ–Lfå¤šé¡¹å¼													
+void init(int Arr[], int num);												        //åˆå§‹åŒ–å…¶ä½™å¤šé¡¹å¼
+void print(int Arr[]);														  	        //è¾“å‡ºå¤šé¡¹å¼
+void mod(int a1[], int mod);										    	        //å¤šé¡¹å¼å–æ¨¡
+void Add(int a1[], int a2[], int a3[]);							        	//å¤šé¡¹å¼åŠ æ³•
+void ModAdd(int a1[], int a2[], int a3[], int mod);		        //å¤šé¡¹å¼æ¨¡åŠ 
+void Minus(int a1[], int a2[], int a3[]);						        	//å¤šé¡¹å¼å‡æ³•
+void ModMinus(int a1[], int a2[], int a3[], int mod);       	//å¤šé¡¹å¼æ¨¡å‡
+void Mul(int a1[], int a2[], int a3[]);								        //å¤šé¡¹å¼ä¹˜æ³•
+void ConstMul(int a1[], int con, int a3[]);					        	//å¤šé¡¹å¼ä¸å¸¸æ•°ç›¸ä¹˜
+void RingMul(int a1[], int a2[], int a3[]);					        	//å¤šé¡¹å¼ç¯ä¸Šçš„ä¹˜æ³•
+void ModRingMul(int a1[], int a2[], int a3[], int mod);     	//å¤šé¡¹å¼ç¯ä¸Šçš„æ¨¡ä¹˜
+int MaxExpon(int a[]);														            //åˆ¤æ–­å¤šé¡¹å¼æœ€å¤§é¡¹
+void Divine(int a1[], int a2[], int a3[], int a4[]);	        //å¤šé¡¹å¼çš„é™¤æ³•
+void Copy(int a1[], int a2[]);												        //å¤šé¡¹å¼çš„å¤åˆ¶
+int Inverse(int a1[], int a2[], int inverse[], int inv);      //å¤šé¡¹å¼çš„é€†
+void Update(int Lf[], int inverse[], int fq[], int q);	      //é€†çš„æå‡
+void KeyGeneration(int Lf[], int U[], int g[], int h[]);      //å¯†é’¥ç”Ÿæˆ
+void Encryption(int h[], int Lr[], int m[], int e[]);		      //åŠ å¯†è¿‡ç¨‹
+void Decryption(int e[], int Lf[], int a[], int Fq[]);	      //è§£å¯†è¿‡ç¨‹
