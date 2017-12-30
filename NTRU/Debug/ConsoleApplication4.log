@@ -1,0 +1,5 @@
+﻿  NTRUEncrypt.cpp
+c:\users\50736\desktop\gitdogg\consoleapplication4\consoleapplication4\ntruencrypt.cpp(5): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+c:\users\50736\desktop\gitdogg\consoleapplication4\consoleapplication4\ntruencrypt.cpp(25): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+  ConsoleApplication4.vcxproj -> C:\Users\50736\Desktop\gitdogg\ConsoleApplication4\Debug\ConsoleApplication4.exe
+  ConsoleApplication4.vcxproj -> C:\Users\50736\Desktop\gitdogg\ConsoleApplication4\Debug\ConsoleApplication4.pdb (Full PDB)
